@@ -14,8 +14,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'cespare/vim-toml'
-Plug 'rust-lang/rust.vim'
 call plug#end()
 
 "let g:airline#extensions#tabline#enabled = 1
