@@ -20,6 +20,8 @@ call plug#end()
 if filereadable(expand("~/.vimrc_background"))
 	let base16colorspace=256
 	source ~/.vimrc_background
+else
+	colorscheme slate
 endif
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16'
@@ -139,7 +141,6 @@ set guifont=monospace\ 8
 au BufNewFile,BufRead *.per setlocal filetype=per
 au! Filetype fgl,per,python setl nosmartindent
 
-let g:go_version_warning = 0
 " change the cursor to line
 if &term =~ '^rxvt'
 	let &t_SI .= "\e[6 q"
